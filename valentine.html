@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+                <!--NAVIGATION AREA-->
+    <body>
+        <div>
+            <nav class="bg-slate-800 p-6">
+                <h1 class="text-white text-center text-xl">BE MY VALENTINE</h1>
+            </nav>
+        </div>
+
+            <!--IMAGE 1-->
+       <div class="flex justify-center w-full sm:[200px] h-[500px] p-10">
+        <img src="imgs/flw.jpg" class="rounded-xl">
+       </div>
+
+       <!--TEXT PARAGRAPH-->
+       <div class="">
+        <h1 class="flex justify-center text-center pb-4 font-md"> WILL YOU BE MY KA-VALENTINE DATE </h1>
+       </div>
+
+    <!-- Text display area -->
+     <h2 id="textDisplay" onclick="text()" class="flex text-center justify-center font-bold"></h2>
+     <h2 id="dateDisplay" onclick="dateDisplay()" class="flex text-center justify-center italic"></h2>
+
+     <!--SPOTIFY-->
+     <div class="flex justify-center text-center">
+      <button class="text-green-900 italic"  id="spotifylink"  onclick="window.location.href='https://open.spotify.com/playlist/74J1lXaCehYQuCcyay2D7C?si=cb4401f54bc54490&pt=77acbe49b4f4b662542aa6beb654ce41'">
+     
+      </button>
+     </div>
+   
+    
+
+    <!-- BUTTONS -->
+    <div class="flex justify-center space-x-10 p-5">
+  <button id="bt-YES" onclick="btYES()" class="bg-blue-900 px-12 py-2 text-white rounded-md hover:bg-gray-600">
+    YES
+  </button>
+  <button id="btNo" onclick="btNO()" class="bg-red-800 px-12 py-2 text-white rounded-md">
+    NO
+  </button>
+
+<script>
+
+      function btYES() { 
+        document.getElementById("textDisplay").innerHTML = "SEE YOU LATER!"
+        document.getElementById("dateDisplay").innerHTML = "When: February 14, 2026 | Time: 10:00 PM | Where: Messenger Call/ Discord"
+        document.getElementById("spotifylink").innerHTML = "Open Link"
+
+      }
+
+    const btNo = document.getElementById("btNo");
+    
+    btNo.addEventListener("mouseover" , function() {
+      btNo.innerHTML = "YES"
+    });
+    btNo.addEventListener("mouseout" , function() {
+      btNo.innerHTML = "NO"
+
+    });
+
+</script>
+
+    
+
+
+
+
